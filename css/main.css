@@ -106,6 +106,9 @@ img {
   width: 100%;
 }
  
+.bg-gray {
+  background-color: #f9f9f9;
+}
 
 
 /*  ----------------------------------------   button  -----------------------------------------   */
@@ -198,18 +201,19 @@ img {
   z-index: 10;
   position: fixed;
   width: 100%;
-  padding: 0 50px;
+  padding: 0 70px;
   background: white;
 }
 
 #logo {
   float: left;
-  line-height: 100px;
+  line-height: 60px;
+  font-size: 20px;
 }
 
 #logo .logo {
   position: relative;
-  top: 25px;
+  top: 7px;
   padding-right: 10px;
 }
 
@@ -229,14 +233,14 @@ img {
 #nav {
   float: right;
   text-transform: uppercase;
-  line-height: 100px;
+  line-height: 60px;
 }
 
 #nav a {
   padding: 12px;
   color: #333;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 #nav a:hover{
@@ -270,17 +274,19 @@ img {
 }
 
 
+
+/*   ----------------------------------------  content 基本  ----------------------------------------   */
+
 #content > div {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 
 #content > div.full-padding {
   padding: 100px 0;
 }
 
-
 #content > div:first-child {
-  padding-top: 200px;
+  padding-top: 130px;
 }
 
 #content > hr {
@@ -305,7 +311,7 @@ img {
 /*   ----------------------------------------  index  ----------------------------------------   */
 
 #content #welcome {
-  padding-top: 150px;
+  padding: 150px 0 100px 0;
 }
 
 #welcome img {
@@ -321,15 +327,14 @@ img {
   margin-top: 10px;
   text-transform: capitalize;
   font-size: 60px;
-  font-weight: bold;
-  font-style: italic;
+  font-weight: lighter;
   line-height: 120%;
   letter-spacing: 0.05em;
 }
 
 #welcome .slogan-ch {
   position: relative;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 26px;
   letter-spacing: 0.2em; 
 }
@@ -340,7 +345,7 @@ img {
 
 
 .goal {
-  background: #EAF5F7;
+  background: linear-gradient(360deg, #FFFFFF 5%, rgba(255, 255, 255, 0) 100%), #EAF5F7;
   text-align: center;
 }
 
@@ -384,9 +389,18 @@ img {
   letter-spacing: 0.1em;
 }
 
+.main-service li {
+    line-height: 1.5em;
+    list-style: disc;
+    margin-bottom: 10px;
+    list-style-position: inside;
+}
+
 .api-services {
   text-align: center;
-  background: #F4EFD8;
+  background: -webkit-linear-gradient(#FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F4EFD8;
+  background: -o-linear-gradient(#FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F4EFD8;
+  background: linear-gradient(#FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F4EFD8;
 }
 
 .api-services .title {
@@ -394,6 +408,7 @@ img {
 }
 
 .updates .title {
+  text-align: center;
   color: #354A5D;
 }
 
@@ -462,7 +477,7 @@ img {
 
 
 
-/*   ----------------------------------------   page title, nav ----------------------------------------   */
+/*   ----------------------------------------   page title, page nav, breadcrumb ----------------------------------------   */
 
 
 .page-title {
@@ -471,7 +486,11 @@ img {
 	font-weight: bold;
 }
 
-.page-title .title {
+#content .page-title h3.title {
+  margin-top: 30px;
+}
+
+.page-title h1.title {
   letter-spacing: 0.4em;
 }
 
@@ -480,16 +499,16 @@ img {
 }
 
 #content .page-nav {
-	padding: 20px 0;
+	padding: 15px 0;
 	background: #f5f5f5;
 	text-align: center;
+  font-size: 15px;
 }
 
 .page-nav .nav-boundary:after {
 	content: "|";
 	color: #237487;
-    position: absolute;
-    margin: 0 115px;
+  position: absolute;
 }
 
 .page-nav, .page-nav a {
@@ -498,6 +517,48 @@ img {
 
 .page-nav a:hover {
 	background-color: #F4EFD8;
+}
+
+div#breadcrumb {
+  position: absolute;
+  top: 80px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#breadcrumb.dark a {
+  color: #333;
+}
+
+#breadcrumb.dark {
+  color: #354A5D;
+}
+
+#breadcrumb.light a {
+  color: #EAF5F7;
+}
+
+#breadcrumb.light {
+  color: white;
+}
+
+#breadcrumb li{
+  float: left;
+}
+
+#breadcrumb a:hover{
+  color: #237487;
+}
+
+#breadcrumb li:after {
+  content: ">";
+  margin:0 10px;
+}
+
+
+#breadcrumb li:last-child:after {
+  content: "";
+  margin:0 ;
 }
 
 
@@ -511,6 +572,10 @@ img {
 .services .page-pic img {
 	width: 1000px;
 	height: auto;
+}
+
+.services .page-nav .nav-boundary:after {
+  margin: 0 115px;
 }
 
 .services #content .service-buttons {
@@ -571,15 +636,10 @@ img {
 	margin-bottom: 50px;
 }
 
-.service .desc {
-	padding: 20px 0;
-	font-size: 15px;
-	line-height: 1.5em;
-}
-
 .service .page-title {
 	text-align: left;
-	background: #EAF5F7;
+  background: linear-gradient(90deg, #EAF5F7 2%, #FFFFFF 99%), #EAF5F7;
+	/*background: #EAF5F7;*/
 	color: #354A5D;
 }
 
@@ -592,29 +652,12 @@ img {
 	font-weight: normal;
 }
 
-div#breadcrumb {
-	padding: 20px ;
+.service .page-nav a {
+  color: #354A5D
 }
 
-#breadcrumb li{
-	float: left;
-}
-
-#breadcrumb a:hover{
-	color: #237487;
-}
-
-#breadcrumb li:after {
-	content: "/";
-	margin:0 10px;
-}
-
-#breadcrumb li:last-child {
-}
-
-#breadcrumb li:last-child:after {
-	content: "";
-	margin:0 ;
+.service .page-nav .nav-boundary:after {
+  margin: 0 60px;
 }
 
 .target .slogan{
@@ -649,7 +692,7 @@ div#breadcrumb {
   content: ">";
 	position: absolute;
 	right: 0px;
-	top: 30px;    
+	top: 90px;    
 	font-size: 30px;
 	color: white;
 	text-align: center;
@@ -664,6 +707,20 @@ div#breadcrumb {
   color: #354A5D;
   font-size: 80px;
   margin: 20px 0;
+}
+
+.service .desc {
+  padding: 20px 0;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+.service .desc.big {
+  padding: 0;
+  font-size: 20px;
+  line-height: 1em;
+  font-weight: bold;
+  color: #354A5D;
 }
 
 .concept img {
@@ -713,8 +770,6 @@ div#breadcrumb {
 }
 
 
-
-
 /*   ----------------------------------------  service-interface 個別服務介紹頁  ----------------------------------------  */
 
 .service-interface {
@@ -723,6 +778,7 @@ div#breadcrumb {
 
 .service-interface #content .page-title {
   text-align: left;
+  /*background: linear-gradient(90deg, #354A5D 30%, #237487 100%);*/
   background-color: #354A5D;
 }
 
@@ -734,6 +790,10 @@ div#breadcrumb {
 .service-interface .page-title .subtitle {
   font-size: 24px;
   font-weight: normal;
+}
+
+.service-interface .page-nav .nav-boundary:after {
+  margin: 0 85px;
 }
 
 .service-interface #content h3.title {
@@ -760,9 +820,7 @@ div#breadcrumb {
 }
 
 .about .page-nav .nav-boundary:after {
-	content: "|";
-    position: absolute;
-    margin: 0 20px;
+  margin: 0 20px;
 }
 
 .about #content h3.title {
