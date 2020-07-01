@@ -1,0 +1,968 @@
+
+
+
+/*  ---------------------------------------- 通用 -----------------------------------------   */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+p {
+  color: #333333;
+  line-height: 32px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  display: block;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.container.full-width {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.clearfix:after, .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  margin: 0 -10px;
+}
+
+.row.bordered > div {
+  border: 1px solid #f2f2f2;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-12 {
+  float: left;
+  padding: 0 30px;
+}
+
+.col-1 {
+  width: 8.3333334%;
+}
+
+.col-2 {
+  width: 16.666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.333333%;
+}
+
+.col-5 {
+  width: 41.666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.333333%;
+}
+
+.col-8 {
+  width: 66.666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+ 
+
+
+/*  ----------------------------------------   button  -----------------------------------------   */
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: gray;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.button.green {
+  background: #809B4A;
+  transition: 0.2s linear all;
+}
+
+.button.green:hover {
+  background: white;
+  border: 2px solid #809B4A;
+  color: #809B4A;
+}
+
+.button.bluegreen {
+  background: #237487;
+  transition: 0.2s linear all;
+}
+
+.button.bluegreen:hover {
+  background: white;
+  border: 2px solid #237487;
+  color: #237487;
+}
+
+.button.blue {
+  background: #354A5D;
+  transition: 0.2s linear all;
+}
+
+.button.blue:hover {
+  background: white;
+  border: 2px solid #354A5D;
+  color: #354A5D;
+}
+
+.button.orange {
+  background: #D7804F;
+  transition: 0.2s linear all;
+}
+
+.button.orange:hover {
+  background: white;
+  border: 2px solid #D7804F;
+  color: #D7804F;
+}
+
+.button.blue-bordered {
+  padding: 10px 20px;
+  background: white;
+  color: #354A5D;
+  border: 2px solid #354A5D;
+  font-style: italic;
+}
+
+.button.blue-bordered:hover {
+  background: #354A5D;
+  color: white;
+}
+
+.button.full-width {
+  width: 100%;
+}
+
+.button.small {
+  padding: 10px;
+  font-size: 15px;
+}
+
+
+
+/*   ----------------------------------------  header  ----------------------------------------   */
+
+#header{
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  padding: 0 50px;
+  background: white;
+}
+
+#logo {
+  float: left;
+  line-height: 100px;
+}
+
+#logo .logo {
+  position: relative;
+  top: 25px;
+  padding-right: 10px;
+}
+
+#logo img{
+  width: 100px;
+  height: auto;
+}
+
+#logo .title {
+  letter-spacing: 0.1em;
+}
+
+#logo li, #nav li {
+  float: left;
+}
+
+#nav {
+  float: right;
+  text-transform: uppercase;
+  line-height: 100px;
+}
+
+#nav a {
+  padding: 12px;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#nav a:hover{
+	color: #D7804F;
+}
+
+
+#nav a.active {
+  color: #D7804F;
+  font-weight: 800;
+}
+
+.boundary-before:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.6em);
+  left: 20px;
+  width: 1px;
+  height: 1.1em;
+  background-color: #354A5D;
+}
+
+.boundary-after:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.6em);
+  right: 20px;
+  width: 1px;
+  height: 1.1em;
+  background-color: #354A5D;
+}
+
+
+#content > div {
+  padding: 100px 0;
+}
+
+#content > div.full-padding {
+  padding: 100px 0;
+}
+
+
+#content > div:first-child {
+  padding-top: 200px;
+}
+
+#content > hr {
+  margin: 0;
+  border-top: 1px solid #eee;
+}
+
+#content h3.title {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 0.15em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+
+
+/*   ----------------------------------------  index  ----------------------------------------   */
+
+#content #welcome {
+  padding-top: 150px;
+}
+
+#welcome img {
+  position: absolute;
+  width: 900px;
+  height: auto;
+  left: 403px;
+  top: 95px;
+}
+
+#welcome .slogan-eng {
+  position: relative;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+}
+
+#welcome .slogan-ch {
+  position: relative;
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 0.2em; 
+}
+
+#welcome p {
+  position: relative;
+}
+
+
+.goal {
+  background: #EAF5F7;
+  text-align: center;
+}
+
+#content .goal h3.title {
+  margin:0;
+  color: #237487;
+  font-size: 40px;
+}
+
+.goal .title-eng {
+  margin: 15px 0 20px 0;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  color: rgba(35, 116, 135, 0.71);
+}
+
+.goal p {
+  margin: 0;
+}
+
+#content .main-services {
+  padding: 0;
+}
+
+.main-services .main-service {
+  padding: 50px 0;
+}
+ 
+.main-services img {
+  width: 100%;
+  height: auto;
+}
+
+.main-services .info {
+  padding-top: 30px;
+}
+
+.main-services .service-name {
+  font-size: 32px;
+  color: #354A5D;
+  letter-spacing: 0.1em;
+}
+
+.api-services {
+  text-align: center;
+  background: #F4EFD8;
+}
+
+.api-services .title {
+  color: #D7804F;
+}
+
+.updates .title {
+  color: #354A5D;
+}
+
+.updates a {
+  margin: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+.updates a:hover {
+  color: #237487;
+}
+
+.updates .update {
+  line-height: 50px;
+
+}
+
+.updates .date {
+  text-align: center;
+}
+
+.updates .category {
+  text-align: center;
+  position: relative;
+}
+
+.updates .more-news {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.powers {
+  color: #354A5D;
+  background: #EAF5F7;
+  text-align: center;
+}
+
+.powers i {
+	padding: 30px 0;
+	font-size: 60px;
+}
+
+.partners {
+  background: #91A0AA;
+}
+
+.partners .title {
+  color: white;
+}
+
+.partners .partner {
+  width: 200px;
+  height: 200px;
+}
+
+.partners img {
+  padding: 30px 0;
+  width: 100%;
+  height: auto;
+}
+
+.ask-us {
+  text-align: center;
+}
+
+
+
+/*   ----------------------------------------   page title, nav ----------------------------------------   */
+
+
+.page-title {
+	background: #237487;
+	color: white;
+	font-weight: bold;
+}
+
+.page-title .title {
+  letter-spacing: 0.4em;
+}
+
+.page-title .subtitle {
+  letter-spacing: 0.1em;
+}
+
+#content .page-nav {
+	padding: 20px 0;
+	background: #f5f5f5;
+	text-align: center;
+}
+
+.page-nav .nav-boundary:after {
+	content: "|";
+	color: #237487;
+    position: absolute;
+    margin: 0 115px;
+}
+
+.page-nav, .page-nav a {
+	color: #237487;
+}
+
+.page-nav a:hover {
+	background-color: #F4EFD8;
+}
+
+
+
+/*   ----------------------------------------   services 應用服務連結頁  ----------------------------------------   */
+
+.services #content .page-pic {
+	padding: 50px 0;
+}
+
+.services .page-pic img {
+	width: 1000px;
+	height: auto;
+}
+
+.services #content .service-buttons {
+	padding: 0;
+	margin-bottom: 100px;
+}
+
+.service-button {
+	width: 1000px;
+	height: 300px;
+	border-radius: 10px;
+	text-align: center;
+  box-shadow: 1px 3px 6px #ccc;
+  background-color: #EAF5F7;
+}
+
+
+.service-buttons .location-point {
+	width: 100%;
+	height: 100px;
+}
+
+.service-button.iot {
+	background-image: url(../images/button-iot.png);
+  background-repeat: no-repeat;
+  background-position: 0 ;
+  background-size: 100%;
+}
+
+.services #content .service-button .title {
+	padding: 80px 0 30px 0;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	color: #354A5D;
+}
+
+.services #content .service-button .subtitle {
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	color: #237487;
+}
+
+.services .service-button:hover{
+  border: 3px solid #354A5D;
+}
+
+
+
+/*   ----------------------------------------  service 服務分頁  ----------------------------------------  */
+
+.service #content {
+	text-align: center;
+}
+
+.service #content h3.title {
+	color: #354A5D;
+	font-size: 24px;
+	margin-bottom: 50px;
+}
+
+.service .desc {
+	padding: 20px 0;
+	font-size: 15px;
+	line-height: 1.5em;
+}
+
+.service .page-title {
+	text-align: left;
+	background: #EAF5F7;
+	color: #354A5D;
+}
+
+.service #content .page-title h3.title {
+	text-align: left;
+	font-size: 32px;
+}
+
+.service .page-title .subtitle {
+	font-weight: normal;
+}
+
+div#breadcrumb {
+	padding: 20px ;
+}
+
+#breadcrumb li{
+	float: left;
+}
+
+#breadcrumb a:hover{
+	color: #237487;
+}
+
+#breadcrumb li:after {
+	content: "/";
+	margin:0 10px;
+}
+
+#breadcrumb li:last-child {
+}
+
+#breadcrumb li:last-child:after {
+	content: "";
+	margin:0 ;
+}
+
+.target .slogan{
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  color: #809B4A;
+}
+
+.process {
+	position: relative;
+}
+
+.process .step-number {
+  position: relative;
+  left: -10px;
+  margin: 0 10px;
+  font-size: 60px;
+  font-weight: bold;
+  color: #354A5D;
+  display: inline;
+}
+
+.process .col-1, .process, .col-2 {
+  padding: 0 10px;
+}
+
+.process .step {
+	position: relative;
+}
+
+.process .step:after {
+  content: ">";
+	position: absolute;
+	right: 0px;
+	top: 30px;    
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	width: 30px;
+	height: 30px;
+	border-radius: 20px;
+	background-color: #9BC04F;
+}
+
+.process i, .feature i {
+  color: #354A5D;
+  font-size: 80px;
+  margin: 20px 0;
+}
+
+.concept img {
+	display: inline-block;
+	margin: 30px 0;	
+	width: 600px;
+	height: auto;
+}
+
+.function-interface {
+  background-color: #F4EFD8;
+}
+
+.service #content .function-interface h3.title {
+  color: #D7804F;
+  font-size: 32px;
+}
+
+.interface {
+  display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 5px;
+	text-align: center;
+  box-shadow: 1px 3px 6px #f5f5f5;
+  background-color: white;
+  box-shadow: 1px 3px 6px #ccc
+}
+
+.interface .function-name {
+	margin: 20px 0 0 0;
+	padding: 30px 0;
+  line-height: 1.3em;
+  letter-spacing: 0.1em;
+  color: #809B4A;
+}
+
+.service #content .interface .subtitle {
+	padding: 0;
+	letter-spacing: 0.1em;
+	font-size: 14px;
+	color: #354A5D;
+}
+
+.service .interface:hover{
+  border: 3px solid #809B4A;
+}
+
+
+
+
+/*   ----------------------------------------  service-interface 個別服務介紹頁  ----------------------------------------  */
+
+.service-interface {
+  text-align: center;
+}
+
+.service-interface #content .page-title {
+  text-align: left;
+  background-color: #354A5D;
+}
+
+.service-interface #content .page-title h3.title {
+  font-size: 34px;
+  color: white;
+}
+
+.service-interface .page-title .subtitle {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.service-interface #content h3.title {
+  color: #354A5D;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.service-interface #content .function-interface h3.title {
+  color: #D7804F;
+  font-size: 32px;
+}
+
+
+
+
+
+/*   ----------------------------------------  about  ----------------------------------------   */
+
+.about #content .page-nav li {
+	padding: 10px 0;
+	letter-spacing: 0.1em;
+	font-size: 14px;
+}
+
+.about .page-nav .nav-boundary:after {
+	content: "|";
+    position: absolute;
+    margin: 0 20px;
+}
+
+.about #content h3.title {
+	margin-bottom: 50px;
+	text-align: left;
+	color: #237487;
+	font-size: 30px;
+}
+
+.about #content img {
+	padding: 30px;
+	position: relative;
+	left:25%;
+	width: 500px;
+}
+
+#links a:hover {
+  color: #237487;
+}
+
+
+
+/*  ---------------------------------------- news nad events -----------------------------------------   */
+
+.news-and-events .nav-boundary:after {
+  content: "|";
+  color: #237487;
+  position: absolute;
+  margin: 0 200px;
+}
+
+.news-and-events .page-nav .active {
+	font-weight: bold;
+}
+
+.news-and-events #content .all-news {
+  padding: 50px 0;
+}
+
+.news-and-events #content .new-news {
+  padding: 20px 0;
+}
+
+.new-news img {
+	width: 270px;
+	height: 270px;
+}
+
+.new-news .border {
+  padding: 60px 30px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 6px #ccc;
+}
+
+.news-and-events .dates {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 20px;
+}
+
+.news-and-events .news-title {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.news-and-events hr {
+    width: 570px;
+    margin: 10px 0;
+    height: 1px;
+    background: #333;
+    border: none;
+}
+
+.news-and-events .from {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.news-and-events .text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+
+/*   ----------------------------------------  contact  ----------------------------------------   */
+
+.contact .content {
+  padding: 100px 0;
+}
+
+.contact #content .content h3.title {
+  text-align: left;
+  color: #237487;
+}
+
+.contact .contact-info .address {
+  margin-bottom: 30px;
+}
+
+.contact .contact-info {
+  color: #333;
+  line-height: 30px;
+}
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+}
+.contact-form {
+  display: inline-block;
+  margin: 20px 0;
+}
+.contact-form .col-6,
+.contact-form .col-12 {
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+.contact-form label {
+  display: inline-block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: #333;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+}
+.contact-form textarea {
+  height: 95px;
+}
+
+
+
+/*   ----------------------------------------  footer  ----------------------------------------   */
+
+#footer {
+  position: relative;
+  padding: 80px 0;
+  text-align: left;
+  background: #354A5D;
+  color: white;
+  line-height: 1.2em;
+}
+
+#footer li {
+  margin: 20px 0;
+}
+
+.footer-nav a {
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: white;
+}
+
+.footer-nav a:hover {
+  color: #D7804F;
+}
+
+.footer-nav .index{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#footer .logo {
+  width: auto;
+  height: 80px;
+}
+
+#footer .contact-info {
+  color: white;
+  line-height: 1.2em;
+}
+
+#go-top {
+  position: fixed;
+  right: 35px;
+  bottom: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: #9BC04F;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 50px;
+  color: #fff;
+  
+}
+
+#go-top:hover {
+  background: #fff;
+  color: #9BC04F;
+}
+
+
+
+
+/*# sourceMappingURL=main.css.map */
