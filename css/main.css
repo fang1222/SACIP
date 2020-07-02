@@ -110,6 +110,9 @@ img {
   background-color: #f9f9f9;
 }
 
+span.highlight {
+  color: #237487;
+}
 
 /*  ----------------------------------------   button  -----------------------------------------   */
 
@@ -125,11 +128,11 @@ img {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
+  transition: 0.2s linear all;
 }
 
 .button.green {
   background: #809B4A;
-  transition: 0.2s linear all;
 }
 
 .button.green:hover {
@@ -140,7 +143,6 @@ img {
 
 .button.bluegreen {
   background: #237487;
-  transition: 0.2s linear all;
 }
 
 .button.bluegreen:hover {
@@ -151,7 +153,6 @@ img {
 
 .button.blue {
   background: #354A5D;
-  transition: 0.2s linear all;
 }
 
 .button.blue:hover {
@@ -162,7 +163,6 @@ img {
 
 .button.orange {
   background: #D7804F;
-  transition: 0.2s linear all;
 }
 
 .button.orange:hover {
@@ -241,6 +241,7 @@ img {
   color: #333;
   text-decoration: none;
   font-size: 16px;
+  transition: 0.2s linear all;
 }
 
 #nav a:hover{
@@ -273,6 +274,55 @@ img {
   background-color: #354A5D;
 }
 
+
+
+/*  ---------------------------------------- dropdown -----------------------------------------   */
+
+/* Style The Dropdown Button */
+.dropbtn {
+  padding: 0px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  line-height: 20px;
+  background-color: white;
+  min-width: 220px;
+  /*box-shadow: 2px 3px 3px 3px rgba(1,1,1,0.1);*/
+  box-shadow: 1px 3px 6px rgba(1,1,1,0.1);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f9f9f9;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
 /*   ----------------------------------------  content 基本  ----------------------------------------   */
@@ -318,8 +368,8 @@ img {
   position: absolute;
   width: 900px;
   height: auto;
-  left: 403px;
-  top: 95px;
+  left: 580px;
+  top: 60px;
 }
 
 #welcome .slogan-eng {
@@ -454,6 +504,7 @@ img {
 
 .partners {
   background: #91A0AA;
+  text-align: center;
 }
 
 .partners .title {
@@ -563,7 +614,7 @@ div#breadcrumb {
 
 
 
-/*   ----------------------------------------   services 應用服務連結頁  ----------------------------------------   */
+/*   ----------------------------------------   services 應用服務連結頁  ----------------------------------------   
 
 .services #content .page-pic {
 	padding: 50px 0;
@@ -621,7 +672,7 @@ div#breadcrumb {
 .services .service-button:hover{
   border: 3px solid #354A5D;
 }
-
+/*
 
 
 /*   ----------------------------------------  service 服務分頁  ----------------------------------------  */
@@ -978,6 +1029,7 @@ div#breadcrumb {
   text-decoration: none;
   letter-spacing: 0.1em;
   color: white;
+  transition: 0.2s linear all;
 }
 
 .footer-nav a:hover {
@@ -1012,6 +1064,7 @@ div#breadcrumb {
   font-size: 25px;
   line-height: 50px;
   color: #fff;
+  transition: 0.2s linear all;
   
 }
 

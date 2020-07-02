@@ -7,10 +7,10 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://use.typekit.net/uoy5zaa.css">
-
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/main.css" />
+
+
 
 	<script src="https://kit.fontawesome.com/74224acfd3.js" crossorigin="anonymous"></script>
 	
@@ -34,7 +34,15 @@
 			<div id="nav">
 				<ul class="clearfix">
 					<li><a href="about.html">關於平台</a></li>
-					<li><a href="service.html">應用服務</a></li>
+					<li class="dropdown">
+						<a class="dropbtn">應用服務</a>
+						<div class="dropdown-content">
+						    <a href="service-iot.html">農業<span class="highlight">物</span>聯網數位服務</a>
+						    <a href="service-twin.html">專家建議<span class="highlight">智</span>能決策數位服務</a>
+						    <a href="service-produce.html">智農聯盟生<span class="highlight">產</span>共通數位服務</a>
+						    <a href="service-sale.html">農產生產<span class="highlight">消</span>費媒合數位服務</a>
+					    </div>
+					</li>
 					<li><a href="https://agriinfo.tari.gov.tw/" target="_blank">OPEN API專區</a></li>
 					<li><a href="news.html">新聞與活動</a></li>
 					<li><a href="#">FAQ</a></li>
@@ -50,7 +58,7 @@
 		<div id="welcome">
 			<div class="container">
 				<div class="welcome-pic">
-					<img src="images/frontpagepic_temp.png" alt="welcome-pic" />
+					<img src="images/frontpagepic_temp3.png" alt="welcome-pic" />
 				</div>				
 				<div class="welcome-slogan">
 					<h1 class="slogan-eng">smart-agri <br/> ecosystem</h1>
@@ -75,8 +83,9 @@
 					<div class="col-5">
 						<img src="images/services_iot.png" alt="物">
 					</div>
-					<div class="col-7 info">
-						<h3 class="service-name">農業物聯網數位服務</h3>
+					<div class="col-1">&nbsp</div>
+					<div class="col-6 info">
+						<h3 class="service-name">農業<span class="highlight">物</span>聯網數位服務</h3>
 						<ul>
 							<li>匯集公私農業共通資訊，並統一共享規格</li>
 							<li>轉換資料庫數據為資料分析數位服務</li>
@@ -87,7 +96,7 @@
 				</div>
 				<div class="row main-service">
 					<div class="col-7 info">
-						<h3 class="service-name">專家建議智能決策數位服務</h3>
+						<h3 class="service-name">專家建議<span class="highlight">智</span>能決策數位服務</h3>
 						<ul>
 							<li>智慧生產數據診斷、處理</li>
 							<li>數位分身模組建置</li>
@@ -102,8 +111,9 @@
 					<div class="col-5">
 						<img src="images/services_produce.png" alt="產">
 					</div>
-					<div class="col-7 info">
-						<h3 class="service-name">智農聯盟生產共通數位服務</h3>
+					<div class="col-1">&nbsp</div>
+					<div class="col-6 info">
+						<h3 class="service-name">智農聯盟生<span class="highlight">產</span>共通數位服務</h3>
 						<ul>
 							<li>Lorem ipsum dolor sit amet.</li>
 							<li>Lorem ipsum dolor sit amet.</li>
@@ -114,7 +124,7 @@
 				</div>
 				<div class="row main-service">
 					<div class="col-7 info">
-						<h3 class="service-name">農產生產消費媒合數位服務</h3>
+						<h3 class="service-name">農產生產<span class="highlight">消</span>費媒合數位服務</h3>
 						<ul>
 							<li>供應鏈生產消費兩端共通資料彙整</li>
 							<li>跨平台資料交換分析服務</li>
@@ -238,7 +248,8 @@
 							<a href="about.html">關於平台</a>
 						</li>
 						<li>
-							<a href="service.html">應用服務</a>
+							<span>應用服務：</span>
+							<a href="service-iot.html">物</a>&nbsp<a href="service-twin.html">智</a>&nbsp<a href="service-produce.html">產</a>&nbsp<a href="service-sale.html">消</a>
 						</li>
 						<li>
 							<a href="https://agriinfo.tari.gov.tw/" target="_blank">Open API專區</a>
