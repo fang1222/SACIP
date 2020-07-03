@@ -110,8 +110,20 @@ img {
   background-color: #f9f9f9;
 }
 
-span.highlight {
+span.bluegreen {
   color: #237487;
+}
+
+span.green {
+  color: #809B4A;
+}
+
+span.orange {
+  color: #D7804F;
+}
+
+span.bold {
+  font-weight: bold;
 }
 
 /*  ----------------------------------------   button  -----------------------------------------   */
@@ -397,6 +409,11 @@ span.highlight {
 .goal {
   background: linear-gradient(360deg, #FFFFFF 5%, rgba(255, 255, 255, 0) 100%), #EAF5F7;
   text-align: center;
+  height: 460px;
+}
+
+#content .goal {
+  padding: 100px 0;
 }
 
 #content .goal h3.title {
@@ -414,6 +431,59 @@ span.highlight {
 
 .goal p {
   margin: 0;
+}
+
+.goal .feature {
+  margin-top: 40px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature i { 
+  margin: 15px 0;
+  color: #237487;
+  font-size: 40px;
+  border-radius: 5px;
+}
+
+.feature .desc {
+  padding: 10px 0 20px 0;
+  font-size: 13px;
+  line-height: 1.5em;
+}
+
+.feature .desc.big {
+  padding: 0;
+  font-size: 15px;
+  line-height: 1em;
+  font-weight: bold;
+  color: #237487;
+}
+
+.feature .border {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.goal .feature .desc {
+  display: none;
+  letter-spacing: 0.03em;
+}
+
+.goal .feature .desc.big {
+  display: inline-block;
+}
+
+.goal .feature a:hover .border {
+ background: #f3f3f3;
+}
+
+.goal .feature a:hover .desc {
+ display: inline-block;
 }
 
 #content .main-services {
@@ -434,9 +504,17 @@ span.highlight {
 }
 
 .main-services .service-name {
+  margin-bottom: 22px;
   font-size: 32px;
   color: #354A5D;
   letter-spacing: 0.1em;
+}
+
+.main-service .service-subtitle {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #237487;
+  letter-spacing: 0.05em;
 }
 
 .main-service li {
@@ -447,14 +525,18 @@ span.highlight {
 }
 
 .api-services {
+  position: relative;
   text-align: center;
-  background: -webkit-linear-gradient(#FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F4EFD8;
-  background: -o-linear-gradient(#FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F4EFD8;
-  background: linear-gradient(#FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F4EFD8;
+  background-color: #f9f9f9;
+  /*
+  background: -webkit-linear-gradient(#FFFFFF 0%, rgba(255, 255, 255, 0) 40%), #F4EFD8;
+  background: -o-linear-gradient(#FFFFFF 0%, rgba(255, 255, 255, 0) 40%), #F4EFD8;
+  background: linear-gradient(#FFFFFF 0%, rgba(255, 255, 255, 0) 40%), #F4EFD8;*/
 }
 
-.api-services .title {
-  color: #D7804F;
+#content .api-services h3.title {
+  color: #809B4A;
+  font-size: 28px;
 }
 
 .updates .title {
@@ -703,7 +785,7 @@ div#breadcrumb {
 
 .target .slogan{
   font-size: 30px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   color: #809B4A;
 }
 
@@ -717,11 +799,11 @@ div#breadcrumb {
   line-height: 100px;
 }
 
-.process .step-number {
+.step-number {
   position: relative;
   left: -10px;
   margin: 0 10px;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
   color: #354A5D;
   display: inline;
@@ -765,16 +847,20 @@ div#breadcrumb {
 }
 */
 
-.process i, .feature i {
+.process i {
   color: #354A5D;
   font-size: 80px;
   margin: 20px 0;
 }
 
+.service .feature i{
+  color: #354A5D;
+}
+
 .service .desc {
   padding: 20px 0;
   font-size: 15px;
-  line-height: 1.5em;
+  line-height: 1.7em;
 }
 
 .service .desc.big {
@@ -792,12 +878,13 @@ div#breadcrumb {
 	height: auto;
 }
 
+
 .function-interface {
   background-color: #F4EFD8;
 }
 
 .service #content .function-interface h3.title {
-  color: #D7804F;
+  color: #237487;
   font-size: 32px;
 }
 
@@ -807,9 +894,8 @@ div#breadcrumb {
 	height: 200px;
 	border-radius: 5px;
 	text-align: center;
-  box-shadow: 1px 3px 6px #f5f5f5;
   background-color: white;
-  box-shadow: 1px 3px 6px #ccc
+  box-shadow: 1px 3px 6px #ccc;
 }
 
 .interface .function-name {
@@ -817,7 +903,7 @@ div#breadcrumb {
 	padding: 30px 0;
   line-height: 1.3em;
   letter-spacing: 0.1em;
-  color: #809B4A;
+  color: #237487;
 }
 
 .service #content .interface .subtitle {
@@ -828,7 +914,7 @@ div#breadcrumb {
 }
 
 .service .interface:hover{
-  border: 3px solid #809B4A;
+  border: 3px solid #237487;
 }
 
 

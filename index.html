@@ -34,10 +34,10 @@
 					<li class="dropdown">
 						<a class="dropbtn">應用服務</a>
 						<div class="dropdown-content">
-						    <a href="service-iot.html">農業<span class="highlight">物</span>聯網數位服務</a>
-						    <a href="service-twin.html">專家建議<span class="highlight">智</span>能決策數位服務</a>
-						    <a href="service-produce.html">智農聯盟生<span class="highlight">產</span>共通數位服務</a>
-						    <a href="service-sale.html">農產生產<span class="highlight">消</span>費媒合數位服務</a>
+						    <a href="service-iot.html">農業<span class="orange">物</span>聯網數位服務</a>
+						    <a href="service-twin.html">專家建議<span class="orange">智</span>能決策數位服務</a>
+						    <a href="service-produce.html">智農聯盟生<span class="orange">產</span>共通數位服務</a>
+						    <a href="service-sale.html">農產生產<span class="orange">消</span>費媒合數位服務</a>
 					    </div>
 					</li>
 					<li><a href="https://agriinfo.tari.gov.tw/" target="_blank">OPEN API專區</a></li>
@@ -67,36 +67,80 @@
 		</div>
 
 		<div class="goal">
+
 			<div class="container">
+
 				<h3 class="title">智慧農業4.0共通資訊平台</h3>
 				<h4 class="title-eng">Smart-Agri Common Information Platform</h4>
-				<p>利用大數據、物聯網、AI技術及Open API資料共享<br/>提供智慧農業數位服務 ， 促進農業數位轉型 ， 創造農產業新價值</p>
-			</div>
+				<p>利用大數據、物聯網、AI技術及Open API資料共享<br/>促進農業數位轉型 ， 創造農產業新價值</p>
+
+				<div class="feature">
+					<div class="container">
+						<div class="row">	
+							<a href="#iot" class="col-3">
+								<div class="border">
+									<i class="fas fa-cloud-upload-alt"></i>
+									<div class="desc big">物聯網共享</div>
+								</div>	
+								<div class="desc">完整農業大數據水庫<br/>提供OPEN API介接</div>	
+						
+							</a>
+							<a href="#twin" class="col-3">
+								<div class="border">
+									<i class="fas fa-user-friends"></i>
+									<div class="desc big">數位分身</div>
+								</div>	
+								<div class="desc">降低技術轉移時間成本</div>																					
+							</a>														
+							<a href="#produce" class="col-3">
+								<div class="border">
+									<i class="fas fa-spray-can"></i>
+									<div class="desc big">智慧用藥</div>
+								</div>	
+								<div class="desc">精準用藥保障食品安全</div>																						
+							</a>							
+							<a href="#sale" class="col-3">
+								<div class="border">
+									<i class="fas fa-seedling"></i>
+									<div class="desc big">農食溯源</div>
+								</div>
+								<div class="desc">管控食材供應風險<br/>提供生產端食材用量參考</div>					
+							</a>
+						</div>
+					</div>
+				</div>	
+
+			</div>		
+
 		</div>
+
 
 		<div class="main-services">
 			<div class="container">
-				<div class="row main-service">
+
+				<div id="iot" class="row main-service">
 					<div class="col-5">
 						<img src="images/services_iot.png" alt="物">
 					</div>
-					<div class="col-1">&nbsp</div>
-					<div class="col-6 info">
-						<h3 class="service-name">農業<span class="highlight">物</span>聯網數位服務</h3>
+					<div class="col-7 info">
+						<h3 class="service-name">農業<span class="bluegreen">物</span>聯網數位服務</h3>
+						<div class="service-subtitle">共享物聯網共通資訊&nbsp促進農業數位轉型</div>
 						<ul>
 							<li>匯集公私農業共通資訊，並統一共享規格</li>
-							<li>轉換資料庫數據為資料分析數位服務</li>
-							<li>訂定共通資訊 學研第三方共創機制</li>
+							<li>轉換資料庫數據為資料分析數位服務，並提供數位服務存取介面</li>
+							<li>訂定共通資訊 共享回饋機制及學研第三方共創機制</li>
 						</ul>
 						<a href="service-iot.html" class="button bluegreen">物聯網共享</a>
 					</div>
 				</div>
-				<div class="row main-service">
+
+				<div id="twin" class="row main-service">
 					<div class="col-7 info">
-						<h3 class="service-name">專家建議<span class="highlight">智</span>能決策數位服務</h3>
+						<h3 class="service-name">專家建議<span class="bluegreen">智</span>能決策數位服務</h3>
+						<div class="service-subtitle">簡化農業達人技術轉移程序&nbsp加速智農產業發展</div>
 						<ul>
-							<li>智慧生產數據診斷、處理</li>
-							<li>數位分身模組建置</li>
+							<li>物聯網數據異常診斷，縮短突發狀況反應時間</li>
+							<li>數位分身模組建置，加速技術移轉</li>
 						</ul>
 						<a href="service-twin.html" class="button bluegreen">數位分身</a>							
 					</div>	
@@ -104,13 +148,14 @@
 						<img src="images/services_twin.png" alt="智">
 					</div>					
 				</div>
-				<div class="row main-service">
+
+				<div id="produce" class="row main-service">
 					<div class="col-5">
 						<img src="images/services_produce.png" alt="產">
 					</div>
-					<div class="col-1">&nbsp</div>
-					<div class="col-6 info">
-						<h3 class="service-name">智農聯盟生<span class="highlight">產</span>共通數位服務</h3>
+					<div class="col-7 info">
+						<h3 class="service-name">智農聯盟生<span class="bluegreen">產</span>共通數位服務</h3>
+						<div class="service-subtitle">以病蟲害匯集機制與服務達成精準用藥</div>
 						<ul>
 							<li>Lorem ipsum dolor sit amet.</li>
 							<li>Lorem ipsum dolor sit amet.</li>
@@ -119,9 +164,11 @@
 						<a href="service-produce.html" class="button bluegreen">智慧用藥</a>
 					</div>						
 				</div>
-				<div class="row main-service">
+
+				<div id="sale" class="row main-service">
 					<div class="col-7 info">
-						<h3 class="service-name">農產生產<span class="highlight">消</span>費媒合數位服務</h3>
+						<h3 class="service-name">農產生產<span class="bluegreen">消</span>費媒合數位服務</h3>
+						<div class="service-subtitle">串聯產銷兩端資訊&nbsp建立農食聯防分析機制</div>
 						<ul>
 							<li>供應鏈生產消費兩端共通資料彙整</li>
 							<li>跨平台資料交換分析服務</li>
@@ -133,6 +180,7 @@
 						<img src="images/services_sale.png" alt="消">
 					</div>												
 				</div>
+
 			</div>
 		</div>
 		
@@ -141,9 +189,10 @@
 				<div class="row">
 					<div class="col-12">
 						<h3 class="title">智慧農業 OPEN API</h3>
-						<p>智慧農業4.0共通資訊平台開放資料OPEN API服務，以REST(Representational State Transfer)API的方式，結合URL與參數，以JSON格式回傳各種專家建議、環境資訊、物聯網資訊等資料，提供農民、農企業、系統開發商等使用者使用。</p>
-						<a href="https://agriinfo.tari.gov.tw/" class="button orange" target="_blank">OPEN API專區</a>						
+						<p>智慧農業4.0共通資訊平台開放資料OPEN API服務，結合URL與參數，<br/>以JSON格式回傳各種專家建議、環境資訊、物聯網資訊等資料，<br/>提供農民、農企業、系統開發商等使用者使用。</p>
+						<a href="https://agriinfo.tari.gov.tw/" class="button green" target="_blank">OPEN API專區</a>						
 					</div>
+
 				</div>
 			</div>
 		</div>
