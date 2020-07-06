@@ -409,11 +409,10 @@ span.bold {
 .goal {
   background: linear-gradient(360deg, #FFFFFF 5%, rgba(255, 255, 255, 0) 100%), #EAF5F7;
   text-align: center;
-  height: 460px;
 }
 
 #content .goal {
-  padding: 100px 0;
+  padding: 100px 0 50px 0;
 }
 
 #content .goal h3.title {
@@ -433,6 +432,8 @@ span.bold {
   margin: 0;
 }
 
+
+
 .goal .feature {
   margin-top: 40px;
 }
@@ -450,7 +451,7 @@ span.bold {
 
 .feature .desc {
   padding: 10px 0 20px 0;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.5em;
 }
 
@@ -486,6 +487,7 @@ span.bold {
  display: inline-block;
 }
 
+
 #content .main-services {
   padding: 0;
 }
@@ -518,6 +520,7 @@ span.bold {
 }
 
 .main-service li {
+  font-size: 14px;
   line-height: 1.5em;
   list-style: disc;
   margin-bottom: 10px;
@@ -880,7 +883,7 @@ div#breadcrumb {
 
 
 .function-interface {
-  background-color: #F4EFD8;
+  background-color: #EAF5F7;
 }
 
 .service #content .function-interface h3.title {
@@ -950,11 +953,14 @@ div#breadcrumb {
 }
 
 .service-interface #content .function-interface h3.title {
-  color: #D7804F;
+  color: #237487;
   font-size: 32px;
 }
 
-
+.service-interface .process .step:after {
+  top: 60px;
+  left: 220px;
+}
 
 
 
